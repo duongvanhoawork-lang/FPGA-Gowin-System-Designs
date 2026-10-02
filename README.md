@@ -9,11 +9,6 @@ This repository contains digital hardware designs, Verilog/HDL source code, and 
 
 ## 📋 Repository Structure
 
-```
-FPGA-Gowin-System-Designs/
-├── ButomControlLed/        # Button-controlled LED system design
-└── LogicGate/              # Combinational logic gate implementations
-```
 
 ---
 
