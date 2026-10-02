@@ -19,31 +19,8 @@ FPGA-Gowin-System-Designs/
 
 ## 🧪 Projects
 
-### 1. 🔘 Button-Controlled LED
-**Directory:** [`ButomControlLed/`](./ButomControlLed/)
 
-Design and implementation of a button-input LED control system on the GW5A FPGA board.
-- Debounced button input reading via GPIO pins
-- LED state toggling mapped to on-chip I/O constraints
-- Clock-synchronized state machine implementation
 
-> ⚠️ **Notice:** Due to technology confidentiality and internal distribution policies, detailed source code and step-by-step tutorial videos are kept private.  
-> Contact for private review access: **DuongVanHoa.work@gmail.com**
-
----
-
-### 2. ⚙️ Logic Gate Implementations
-**Directory:** [`LogicGate/`](./LogicGate/)
-
-Verification and implementation of fundamental combinational logic operations synthesized onto the GW5A FPGA fabric.
-- AND, OR, NOT, NAND, NOR, XOR, XNOR gate implementations
-- Functional verification via onboard LED indicators
-- RTL synthesis and timing analysis using Gowin EDA toolchain
-
-> ⚠️ **Notice:** Due to technology confidentiality and internal distribution policies, detailed source code and step-by-step tutorial videos are kept private.  
-> Contact for private review access: **DuongVanHoa.work@gmail.com**
-
----
 
 ## 🛠️ Tools & Technology
 
