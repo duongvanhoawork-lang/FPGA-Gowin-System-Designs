@@ -25,6 +25,9 @@ This repository contains digital hardware designs, Verilog/HDL source code, and 
   
   ![Snake Game Demo](./snake_game_src/501092910945119617.gif)
 
+- **[tetris game](./tetris_game_src)**: A classic Tetris game implementation on FPGA.
+  
+  ![Tetris Game Demo](./tetris_game_src/7389620632929204818.gif)
 
 
 
