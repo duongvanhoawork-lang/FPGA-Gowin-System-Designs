@@ -16,6 +16,8 @@ This repository contains digital hardware designs, Verilog/HDL source code, and 
 
 - **[memory game](./memory%20game)**: An interactive memory game implemented with a state machine, pseudo-random sequence generator (LFSR), and 7-segment displays.
 
+  ![Memory Game Demo](./memory%20game/7315198671756364142.gif)
+
 
 
 
