@@ -14,6 +14,10 @@ This repository contains digital hardware designs, Verilog/HDL source code, and 
 
 ## 🧪 Projects
 
+- **[LogicGate](./LogicGate)**: Basic logic gate implementations.
+- **[ButomControlLed](./ButomControlLed)**: Button control LED operations.
+- **[memory game](./memory%20game)**: An interactive memory game implemented with a state machine, pseudo-random sequence generator (LFSR), and 7-segment displays.
+
 
 
 
