@@ -19,6 +19,9 @@ This repository contains digital hardware designs, Verilog/HDL source code, and 
   ![Memory Game Demo](./memory%20game/7315198671756364142.gif)
 
 - **[memory game ver2](./memory%20game%20ver2)**: An updated version of the interactive memory game.
+  
+  ![Memory Game Ver2 Demo](./memory%20game%20ver2/8257145239417106892.gif)
+
 
 
 ## 🛠️ Tools & Technology
