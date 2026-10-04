@@ -1,0 +1,10 @@
+[
+    {
+        "InstFile": "C:/FPGA_Game_Snack/snake_game_src/hw/fpga_project/src/pll_init.v",
+        "InstLine": 4,
+        "InstName": "PLL_INIT",
+        "ModuleFile": "C:/FPGA_Game_Snack/snake_game_src/hw/fpga_project/src/pll_init.v",
+        "ModuleLine": 4,
+        "ModuleName": "PLL_INIT"
+    }
+]
