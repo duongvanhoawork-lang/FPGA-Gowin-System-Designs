@@ -1,0 +1,83 @@
+`timescale 1ns / 1ps
+
+module testbench();
+
+    // Khai báo các tín hiệu tương ứng với Top Module
+    reg i_Clk;
+    reg i_Switch_1;
+    reg i_Switch_2;
+    reg i_Switch_3;
+    
+    wire o_LED_1;
+    wire o_LED_2;
+    wire o_LED_3;
+    wire o_SEG7_DIO;
+    wire o_SEG7_SCLK;
+    wire o_SEG7_RCLK;
+
+    // Instantiate Top Module
+    State_Machine_Project_Top uut (
+        .i_Clk(i_Clk),
+        .i_Switch_1(i_Switch_1),
+        .i_Switch_2(i_Switch_2),
+        .i_Switch_3(i_Switch_3),
+        .o_LED_1(o_LED_1),
+        .o_LED_2(o_LED_2),
+        .o_LED_3(o_LED_3),
+        .o_SEG7_DIO(o_SEG7_DIO),
+        .o_SEG7_SCLK(o_SEG7_SCLK),
+        .o_SEG7_RCLK(o_SEG7_RCLK)
+    );
+
+    // Tạo xung clock (50MHz -> chu kỳ 20ns)
+    initial begin
+        i_Clk = 0;
+        forever #10 i_Clk = ~i_Clk;
+    end
+
+    // Kịch bản test (Test stimulus)
+    initial begin
+        // Khởi tạo trạng thái ban đầu (Nút nhấn ở mức 1 vì dùng active low)
+        i_Switch_1 = 1;
+        i_Switch_2 = 1;
+        i_Switch_3 = 1;
+
+        // Chờ hệ thống ổn định
+        #1000000; 
+
+        // Nhấn thử Switch 1 (kéo xuống 0)
+        i_Switch_1 = 0;
+        #15000000; // Đợi đủ lâu để qua hàm debounce (DEBOUNCE_LIMIT = 500000 cycles = 10ms)
+        i_Switch_1 = 1; // Nhả nút
+        #15000000;
+
+        // Nhấn thử Switch 2 (kéo xuống 0)
+        i_Switch_2 = 0;
+        #15000000;
+        i_Switch_2 = 1;
+        #15000000;
+
+        // Nhấn thử Switch 3 (kéo xuống 0)
+        i_Switch_3 = 0;
+        #15000000;
+        i_Switch_3 = 1;
+        #15000000;
+
+        // Chạy thêm một lúc rồi kết thúc simulation
+        #50000000;
+        $finish;
+    end
+
+    // Khối giám sát tín hiệu
+    initial begin
+        $monitor("Time = %0t, SW = %b%b%b, LED = %b%b%b", 
+                 $time, i_Switch_1, i_Switch_2, i_Switch_3, o_LED_1, o_LED_2, o_LED_3);
+    end
+
+    // Xuất file sóng (waveform) để xem trên ModelSim, GTKWave...
+    initial begin
+        $dumpfile("waveform.vcd");
+        $dumpvars(0, testbench);
+    end
+
+endmodule
