@@ -1,0 +1,38 @@
+// File ràng buộc chân cho Gowin FPGA ACG525
+// User: Dương Văn Hòa - FPT University
+
+// --- CLOCK ---
+IO_LOC "i_clk" T9;
+IO_PORT "i_clk" IO_TYPE=LVTTL33;
+
+// --- KEY (Switches) ---
+// Chú ý: KEY trên board ACG525 thường là Active Low (nhấn là 0)
+IO_LOC "i_sw[0]" B16;
+IO_PORT "i_sw[0]" IO_TYPE=LVTTL33;
+IO_LOC "i_sw[1]" A15;
+IO_PORT "i_sw[1]" IO_TYPE=LVTTL33;
+IO_LOC "i_sw[2]" C15;
+IO_PORT "i_sw[2]" IO_TYPE=LVTTL33;
+
+// --- RESET (Tận dụng LED3 hoặc một chân KEY trống nếu cần) ---
+// Ở đây tôi giả định bạn dùng một nút bấm làm Reset, ví dụ KEY0 nếu i_sw dùng KEY1,2
+// Nếu dùng theo code cũ, bạn cần gán i_rst_n vào một chân KEY.
+IO_LOC "i_rst_n" G6; // eth_rst_n hoặc chọn một KEY khác tùy ý
+IO_PORT "i_rst_n" IO_TYPE=LVTTL33;
+
+// --- LED ---
+IO_LOC "o_led[0]" D14;
+IO_PORT "o_led[0]" IO_TYPE=LVTTL33;
+IO_LOC "o_led[1]" C14;
+IO_PORT "o_led[1]" IO_TYPE=LVTTL33;
+IO_LOC "o_led[2]" B9;
+IO_PORT "o_led[2]" IO_TYPE=LVTTL33;
+
+// --- 7-SEGMENT LED (SERIAL INTERFACE) ---
+// Board này dùng IC dịch 74HC595 để điều khiển LED 7 đoạn
+IO_LOC "o_seg7_dio" F4;   // SEG7_DIO (DS)
+IO_PORT "o_seg7_dio" IO_TYPE=LVTTL33;
+IO_LOC "o_seg7_sclk" H4;  // SEG7_SCLK (SH_CP)
+IO_PORT "o_seg7_sclk" IO_TYPE=LVTTL33;
+IO_LOC "o_seg7_rclk" F3;  // SEG7_RCLK (ST_CP)
+IO_PORT "o_seg7_rclk" IO_TYPE=LVTTL33;

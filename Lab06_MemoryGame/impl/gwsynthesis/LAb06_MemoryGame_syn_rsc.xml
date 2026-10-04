@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="State_Machine_Project_Top" Lut="14">
+    <SubModule name="Debounce_SW1" Register="20" Alu="18" Lut="12"/>
+    <SubModule name="Debounce_SW2" Register="20" Alu="18" Lut="11"/>
+    <SubModule name="Debounce_SW3" Register="20" Alu="18" Lut="11"/>
+    <SubModule name="Game_Inst" Register="40" Alu="4" Lut="63">
+        <SubModule name="Count_Inst" Register="26" Alu="24" Lut="12"/>
+        <SubModule name="LFSR_Inst" Register="22" Lut="1"/>
+    </SubModule>
+    <SubModule name="Scoreboard" Register="32" Alu="7" Lut="38"/>
+</Module>

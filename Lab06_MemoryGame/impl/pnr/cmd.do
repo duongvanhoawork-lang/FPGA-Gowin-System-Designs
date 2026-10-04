@@ -1,0 +1,12 @@
+-d C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\impl\gwsynthesis\LAb06_MemoryGame.vg
+-p GW5A-25A-UBGA324-2
+-pn GW5A-LV25UG324C2/I1
+-cst C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\tcl.cst
+-cfg C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-correct_hold 1
+-route_maxfan 23

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW5A-25A" package="UBGA324" speed="2" partNumber="GW5A-LV25UG324C2/I1"/>
+    <FileList>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\Count_And_Toggle.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\Debounce_Filter.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\LFSR_22.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\Serial_7Segment_Driver.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\State_Machine_Game.v" type="verilog"/>
+        <File path="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\src\State_Machine_Project_Top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="C:\Gowin\Gowin_V1.9.9_x64\IDE\bin\Documents\LAb06_MemoryGame\impl\gwsynthesis\LAb06_MemoryGame.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

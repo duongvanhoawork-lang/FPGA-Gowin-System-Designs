@@ -1,0 +1,70 @@
+[
+    {
+        "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+        "InstLine": 1,
+        "InstName": "State_Machine_Project_Top",
+        "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+        "ModuleLine": 1,
+        "ModuleName": "State_Machine_Project_Top",
+        "SubInsts": [
+            {
+                "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+                "InstLine": 24,
+                "InstName": "Debounce_SW1",
+                "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/Debounce_Filter.v",
+                "ModuleLine": 9,
+                "ModuleName": "Debounce_Filter"
+            },
+            {
+                "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+                "InstLine": 25,
+                "InstName": "Debounce_SW2",
+                "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/Debounce_Filter.v",
+                "ModuleLine": 9,
+                "ModuleName": "Debounce_Filter"
+            },
+            {
+                "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+                "InstLine": 26,
+                "InstName": "Debounce_SW3",
+                "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/Debounce_Filter.v",
+                "ModuleLine": 9,
+                "ModuleName": "Debounce_Filter"
+            },
+            {
+                "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+                "InstLine": 33,
+                "InstName": "Game_Inst",
+                "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Game.v",
+                "ModuleLine": 1,
+                "ModuleName": "State_Machine_Game",
+                "SubInsts": [
+                    {
+                        "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Game.v",
+                        "InstLine": 140,
+                        "InstName": "Count_Inst",
+                        "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/Count_And_Toggle.v",
+                        "ModuleLine": 5,
+                        "ModuleName": "Count_And_Toggle"
+                    },
+                    {
+                        "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Game.v",
+                        "InstLine": 143,
+                        "InstName": "LFSR_Inst",
+                        "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/LFSR_22.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "LFSR_22"
+                    }
+                ]
+            },
+            {
+                "InstFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/State_Machine_Project_Top.v",
+                "InstLine": 48,
+                "InstName": "Scoreboard",
+                "ModuleFile": "C:/Users/zombi/Downloads/FAP201-20261001T031302Z-1-001/FAP201/Lab06_MemoryGame/src/Serial_7Segment_Driver.v",
+                "ModuleLine": 1,
+                "ModuleName": "Serial_7Segment_Driver"
+            }
+        ]
+    }
+]

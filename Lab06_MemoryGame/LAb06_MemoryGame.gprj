@@ -1,0 +1,16 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW5A-25A" pn="GW5A-LV25UG324C2/I1">gw5a25a-008</Device>
+    <FileList>
+        <File path="src/Count_And_Toggle.v" type="file.verilog" enable="1"/>
+        <File path="src/Debounce_Filter.v" type="file.verilog" enable="1"/>
+        <File path="src/LFSR_22.v" type="file.verilog" enable="1"/>
+        <File path="src/Serial_7Segment_Driver.v" type="file.verilog" enable="1"/>
+        <File path="src/State_Machine_Game.v" type="file.verilog" enable="1"/>
+        <File path="src/State_Machine_Project_Top.v" type="file.verilog" enable="1"/>
+        <File path="src/tcl.cst" type="file.cst" enable="1"/>
+    </FileList>
+</Project>
